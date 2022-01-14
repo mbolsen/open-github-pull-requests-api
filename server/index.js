@@ -3,13 +3,13 @@ require('dotenv').config();
 const express = require('express');
 
 const app = express();
+const router = require('./routes/routes.js');
 
 //---INITIALIZE THE APP---
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, '..', 'client', 'dist', 'index.html')));
 
 //---ROUTES---
-const router = require('./routes/routes.js');
 app.get('/', router);
 
 //---START THE SERVER---
