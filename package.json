@@ -1,0 +1,28 @@
+{
+  "name": "open-github-pull-requests-api",
+  "version": "1.0.0",
+  "description": "This API will return open pull requests from a GitHub repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbolsen/open-github-pull-requests-api.git"
+  },
+  "keywords": [
+    "github",
+    "api"
+  ],
+  "author": "Matthew Olsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbolsen/open-github-pull-requests-api/issues"
+  },
+  "homepage": "https://github.com/mbolsen/open-github-pull-requests-api#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2"
+  }
+}
