@@ -1,10 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 import React, { useState } from 'react';
 import axios from 'axios';
-
-// ---IMPORT COMPONENTS---
-
-// ---CREATE CONTEXT---
-export const AppContext = React.createContext();
 
 export const App = function () {
   // ---STATE VARIABLES---
@@ -29,33 +25,31 @@ export const App = function () {
       });
   };
 
-  // ---USE EFFECT---
-
   // ---RENDER COMPONENT---
   return (
     <div>
-      <AppContext.Provider value={{ }}>
-        <div>
-          <h1>GitHub Repository Open Pull Requests</h1>
-          <form
-            onSubmit={(event) => {
-              handleSubmit(event);
-            }}
-          >
-            <label>
-              GitHub Repository URL:
-              <input type="text" onChange={handleTextInput} />
-              <button type="submit">Submit</button>
-            </label>
-          </form>
-          <div className="response-box">
-            Response:
-            <pre>
-              {JSON.stringify(response, null, 2)}
-            </pre>
-          </div>
-        </div>
-      </AppContext.Provider>
+      <h1>GitHub Repository Open Pull Requests</h1>
+      <form
+        onSubmit={(event) => {
+          handleSubmit(event);
+        }}
+      >
+        <label>
+          GitHub Repository URL:
+          <input type="text" onChange={handleTextInput} />
+          <button type="submit">Submit</button>
+        </label>
+      </form>
+
+      {/* the response is displayed in the div below. */}
+      {/* the JSON.stringify response null 2 is needed for making the text 'pretty' */ }
+      {/* more information on: https://stackoverflow.com/questions/30765163/pretty-printing-json-with-react */}
+      <div className="response-box">
+        Response:
+        <pre>
+          {JSON.stringify(response, null, 2)}
+        </pre>
+      </div>
     </div>
   );
 };
