@@ -9,6 +9,7 @@ export const AppContext = React.createContext();
 export const App = function () {
   // ---STATE VARIABLES---
   const [text, setText] = useState();
+  const [response, setResponse] = useState();
 
   // ---COMPONENT FUNCTIONS---
   const handleTextInput = (event) => {
@@ -16,14 +17,15 @@ export const App = function () {
   };
 
   const handleSubmit = (event) => {
+    // prevent the page fom re-rendering after submit button press
     event.preventDefault();
     // Send request to the API.
     // Since we are using the localhost there is no need to put the full URL,
     // If this client app was not served by the same server we would need to add the full URL of the API
     axios.get('/openpulls', { text })
       .then((res) => {
-        // temporary console.log for testing purposes
-        console.log(res);
+        // set the response state equal to the response from the get request
+        setResponse(res);
       });
   };
 
@@ -37,7 +39,6 @@ export const App = function () {
           <h1>GitHub Repository Open Pull Requests</h1>
           <form
             onSubmit={(event) => {
-              // event.preventDefault();
               handleSubmit(event);
             }}
           >
@@ -47,6 +48,12 @@ export const App = function () {
               <button type="submit">Submit</button>
             </label>
           </form>
+          <div className="response-box">
+            Response:
+            <pre>
+              {JSON.stringify(response, null, 2)}
+            </pre>
+          </div>
         </div>
       </AppContext.Provider>
     </div>
