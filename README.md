@@ -117,7 +117,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Matt Olsen - mbolsen@gmail
 
-Project Link: [https://github.com/mbolsen/MovieBingo](https://github.com/mbolsen/MovieBingo)
+Project Link: [github.com/mbolsen/open-github-pull-requests-api](github.com/mbolsen/open-github-pull-requests-api)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
