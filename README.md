@@ -26,10 +26,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -84,7 +80,9 @@ To get a copy running:
    ```
 6. Go to localhost:3000 and a page will load with the user interface.
 7. If you want to call this API from somewhere other than the user interface provided then send a request to 
+      ```sh
       localhost:3000/open-pulls?url=<github url>
+      ```
   and the data will be returned.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
