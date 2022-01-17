@@ -99,10 +99,11 @@ To get a copy running:
     },
    ]
    ```
-   
+   -
    
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- DESIGN CHOICES -->
 ## Design Choices
 
