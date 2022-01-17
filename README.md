@@ -39,9 +39,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Example response using Postman:
+<br/>
 <img width="517" alt="Screen Shot 2022-01-17 at 12 30 52 PM" src="https://user-images.githubusercontent.com/89269242/149827715-aa64b540-2341-4903-8f0a-74e23507ffde.png">
 
 Example of the app running from the simple user interface provided
+<br/>
 <img width="570" alt="Screen Shot 2022-01-17 at 12 33 41 PM" src="https://user-images.githubusercontent.com/89269242/149828070-5e1828d9-919e-4827-862b-848a8dc5174b.png">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
