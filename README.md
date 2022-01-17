@@ -42,8 +42,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Screen Shot 2021-12-20 at 7 51 31 PM](https://user-images.githubusercontent.com/89269242/146862726-a33d1e22-10c5-4337-b3f4-c2d6da1d4d8b.png)
 Example response using Postman:
 <img width="517" alt="Screen Shot 2022-01-17 at 12 30 52 PM" src="https://user-images.githubusercontent.com/89269242/149827715-aa64b540-2341-4903-8f0a-74e23507ffde.png">
 
