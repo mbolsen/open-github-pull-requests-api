@@ -27,8 +27,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Design Choices</a></li>
-    <li><a href="#design_choices">Contributing</a></li>
+    <li><a href="#design_choices">Design Choices</a></li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -114,6 +114,7 @@ There were a few design choices that were made:
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
