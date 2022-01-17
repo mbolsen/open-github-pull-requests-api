@@ -27,9 +27,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#usage">Design Choices</a></li>
+    <li><a href="#design_choices">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -102,7 +101,15 @@ To get a copy running:
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+<!-- Design Choices -->
+## Design Choices
 
+There were a few design choices that were made:
+  1. I decided to serve the simple user app with the same server, for simplicity purposes.  This app could have been on a different server.
+  2. Clean code and seperation of concerns.  There are two large benefits to this.  The first is that it is much easier to read for someone else or myself in the future.  There is also the benefit of easy expansion in the future if desired.  To do this simply make a new controller with the desired functionality and update the routes with the new function.
+  3. 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 ## Contributing
 
