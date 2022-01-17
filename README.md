@@ -100,7 +100,6 @@ To get a copy running:
    ]
    ```
    -
-   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,8 +109,10 @@ To get a copy running:
 There were a few design choices that were made:
   1. I decided to serve the simple user app with the same server, for simplicity purposes.  This app could have been on a different server.
   2. Clean code and seperation of concerns.  There are two large benefits to this.  The first is that it is much easier to read for someone else or myself in the future.  There is also the benefit of easy expansion in the future if desired.  To do this simply make a new controller with the desired functionality and update the routes with the new function.
-  3. I like it when other people put a lot of comments in their code.  This makes it more readable for others (or ourselves in the future).  I give credit to Ian Swensen's comments repo.  <a href="https://github.com/Ian-Engineer/good-comments">https://github.com/Ian-Engineer/good-comments</a>
-
+  3. Lots of comments in the code.  This makes it more readable for others (or ourselves in the future).  I give credit to Ian Swensen's comments repo.  <a href="https://github.com/Ian-Engineer/good-comments">https://github.com/Ian-Engineer/good-comments</a>
+  4. The client app is built with React because I enjoy working with React.  There are a handful of other ways it could be built, but I decided on React.  The downside of this is that the webpack needs to be ran to bundle the javascript.  I also considered including the bundle for ease, but ultimately decided not to because it typically isn't included.
+  5. I used a process.env file in the root directory.  If a user includes a GITHUB_TOKEN, then the amount of requests to the GitHub API can be higher.  If a GITHUB_TOKEN is not in the .env file in the root directory, then it will still work, but fewer requests can be made.
+  6. I will continue to think of a more optimized solution.  I enjoyed working with the promises on the get('open-pulls') route.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
