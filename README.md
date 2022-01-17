@@ -9,7 +9,7 @@
 <h3 align="center">GitHub Open Pull Requests API</h3>
 
   <p align="center">
-   This API is designed to return the number of open pull requests for a given GitHub Repo.
+   This API is designed to return how many commits were made per open pull request for a given GitHub repo.
     <br />
   </p>
 </div>
