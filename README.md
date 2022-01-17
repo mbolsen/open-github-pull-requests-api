@@ -72,20 +72,33 @@ To get a copy running:
    ```sh
    npm install npm@latest -g
    ```
-3. start the server -
-   ```sh 
-   npm start
-   ```
-4. To use the simple user interface, you will need to build the webpack run this -
+3. To use the optional simple user interface, you will need to build the webpack run this -
    ```sh 
    npm run build
    ```
-6. Go to localhost:3000 and a page will load with the user interface.
+4. start the server -
+   ```sh 
+   npm start
+   ```
+6. If you want to use the user interface provided and did step 3, then go to localhost:3000 and a page will load with the user interface.
 7. If you want to call this API from somewhere other than the user interface provided then send a request to 
       ```sh
       localhost:3000/open-pulls?url=<github url>
       ```
   and the data will be returned.
+  
+  The data will be returned in the following format:
+  ```sh
+  [
+    { 
+      "pull_request_title": 'example-title1',
+      "number_of_commits": 4,
+    },
+    { 
+      "pull_request_title": 'example-title2',
+      "number_of_commits": 83,
+    },
+   ]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
