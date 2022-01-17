@@ -101,7 +101,7 @@ To get a copy running:
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-<!-- Design Choices -->
+<!-- DESIGN CHOICES -->
 ## Design Choices
 
 There were a few design choices that were made:
