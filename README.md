@@ -99,6 +99,7 @@ To get a copy running:
       "number_of_commits": 83,
     },
    ]
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
