@@ -11,7 +11,7 @@ module.exports = {
         Authorization: process.env.GITHUB_TOKEN,
       },
     };
-
+    console.log(req);
     // repoURL is the github repository url that the client is requesting
     const repoURL = req.query.url;
     // usernameAndRepo is the section of repoURL that only contains the 'username/repo'
@@ -27,6 +27,7 @@ module.exports = {
             axios.get(response.data[i].commits_url, config)
               .then((result) => {
                 // after the axios request push the result in openPRCommits
+                console.log('result', result.data.length);
                 openPRCommits.push({
                   pull_request_title: response.data[i].title,
                   number_of_commits: result.data.length,
@@ -37,6 +38,7 @@ module.exports = {
         // once all of the promises are finished then send the results
         Promise.all(promises)
           .then(() => {
+            console.log('SENDING', openPRCommits);
             res.send(openPRCommits);
           });
       })

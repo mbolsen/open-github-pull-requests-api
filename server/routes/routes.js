@@ -1,5 +1,5 @@
 const controller = require('../controller');
-var router = require('express').Router();
+const router = require('express').Router();
 
 router.get('/open-pulls', controller.openPulls.get);
 router.get('*', controller.serveFrontEnd.get);
