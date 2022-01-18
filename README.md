@@ -65,11 +65,11 @@ Example of the app running from the simple user interface provided
 To get a copy running:
 1. clone the repo -   
    ```sh
-   git clone https://github.com/mbolsen/MovieBingo.git
+   git clone https://github.com/mbolsen/open-github-pull-requests-api.git
    ```
 2. install the necessary libraries -   
    ```sh
-   npm install npm@latest -g
+   npm install
    ```
 3. To use the optional simple user interface, you will need to build the webpack run this -
    ```sh 
@@ -99,7 +99,13 @@ To get a copy running:
     },
    ]
    ```
-   -
+   
+<!-- Running Tests -->
+### Running the tests
+  1. If you would like to run the testing suite, then run this command:
+    ```sh 
+    npm run test
+    ``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
