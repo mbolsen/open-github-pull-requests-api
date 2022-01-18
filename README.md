@@ -104,9 +104,12 @@ To get a copy running:
 <!-- Running Tests -->
 ### Running the tests
   If you would like to run the testing suite, then run this command:
-    ```sh
+    ```
     npm run test  
     ``` 
+  You should see something like this:
+  <br/>
+  <img width="752" alt="Screen Shot 2022-01-17 at 8 09 46 PM" src="https://user-images.githubusercontent.com/89269242/149864244-3707e524-4316-4022-8b76-a1fa465a04da.png">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
