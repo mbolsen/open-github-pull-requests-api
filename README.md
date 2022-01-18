@@ -122,7 +122,8 @@ There were a few design choices that were made:
   3. Lots of comments in the code.  This makes it more readable for others (or ourselves in the future).  I give credit to Ian Swensen's comments repo.  <a href="https://github.com/Ian-Engineer/good-comments">https://github.com/Ian-Engineer/good-comments</a>
   4. The client app is built with React because I enjoy working with React.  There are a handful of other ways it could be built, but I decided on React.  The downside of this is that the webpack needs to be ran to bundle the javascript.  I also considered including the bundle for ease, but ultimately decided not to because it typically isn't included.
   5. I used a process.env file in the root directory.  If a user includes a GITHUB_TOKEN, then the amount of requests to the GitHub API can be higher.  If a GITHUB_TOKEN is not in the .env file in the root directory, then it will still work, but fewer requests can be made.
-  6. I will continue to think of a more optimized solution.  I enjoyed working with the promises on the get('open-pulls') route.
+  6. Testing - Making test calls to the API allows for each line to be tested.  I prefer this over making more tests for smaller functions.  Mocking the data is good because then we don't have to call the actual GitHub API and use up our calls per day.  I also could have added testing from the client side, but since the purpose of this app is an API and not a client app I didn't focus my energy there.
+  7. I will continue to think of a more optimized solution.  I enjoyed working with the promises on the get('open-pulls') route.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
