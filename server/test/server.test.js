@@ -46,13 +46,13 @@ mock.onGet('https://api.github.com/repos/test2/testRepo2/pulls').reply(
 mock.onGet('test2a').reply(200, []);
 
 describe('Open Pull Request Tests', () => {
+  // This test is a simple test to make sure Jest is working properly
   test('true should equal true', () => {
     expect(true).toBe(true);
   });
 
   test('responds to / and sends the client html page', async () => {
     const res = await request(app).get('/');
-    expect(res.header['content-type']).toBe('text/html; charset=UTF-8');
     expect(res.statusCode).toBe(200);
     expect(res.text).toContain("<div id='root'>Loading page</div>");
   });
@@ -66,7 +66,6 @@ describe('Open Pull Request Tests', () => {
     const res = await request(app)
       .get('/open-pulls')
       .query({ url: 'https://github.com/test1/testRepo1' });
-    expect(res.header['content-type']).toBe('application/json; charset=utf-8');
     expect(res.statusCode).toBe(200);
     expect(res.text).toEqual(finalData);
   });
@@ -79,7 +78,6 @@ describe('Open Pull Request Tests', () => {
     const res = await request(app)
       .get('/open-pulls')
       .query({ url: 'https://github.com/test2/testRepo2' });
-    expect(res.header['content-type']).toBe('application/json; charset=utf-8');
     expect(res.statusCode).toBe(200);
     expect(res.text).toEqual(finalData);
   });
@@ -90,7 +88,6 @@ describe('Open Pull Request Tests', () => {
     const res = await request(app)
       .get('/open-pulls')
       .query({ url: 'incorrect-url' });
-    expect(res.header['content-type']).toBe('text/html; charset=utf-8');
     expect(res.statusCode).toBe(200);
     expect(res.text).toEqual(finalData);
   });
