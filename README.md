@@ -27,6 +27,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
+    <li><a href="#running-the-tests">Running the Tests</a></li>
     <li><a href="#design-choices">Design Choices</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -103,11 +104,8 @@ To get a copy running:
 <!-- Running Tests -->
 ### Running the tests
   If you would like to run the testing suite, then run this command:
-  
     ```sh
-    
-    npm run test
-    
+    npm run test  
     ``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
