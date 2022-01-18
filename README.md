@@ -102,9 +102,12 @@ To get a copy running:
    
 <!-- Running Tests -->
 ### Running the tests
-  1. If you would like to run the testing suite, then run this command:
-    ```sh 
+  If you would like to run the testing suite, then run this command:
+  
+    ```sh
+    
     npm run test
+    
     ``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
